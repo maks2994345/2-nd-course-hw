@@ -80,8 +80,8 @@
 .button{
     border-radius: 30px;
     background: #9C0332;
-    width: 234.063px;
-    height: 48.603px;
+    width: 234px;
+    height: 48px;
     border: none;
     font-family: inherit;
     color: #FFF;
@@ -100,5 +100,5 @@
     bottom: 32px;
     left: 32px;
     width: 84px;
-    height: 31.639px;
+    height: 32px;
   }
