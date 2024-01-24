@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.header__menu{
+    background-image: url(./img/headerbackground.jpg);
+    height: 1024px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
