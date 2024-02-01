@@ -1,5 +1,8 @@
 1.
 
+let a = 10;
+console.log(alert(a));
+
 let a = 20;
 console.log(alert(a));
 
@@ -10,7 +13,7 @@ console.log(alert(`Год выпуска первого Iphone ${create}`));
 
 3.
 
-let creator = String(`Brendan`);
+let creator = `Brendan`;
 console.log(alert(`Имя создателя языка JavaScript: ${creator}`));
 
 4.
@@ -21,7 +24,7 @@ let sum = b + c;
 let difference = b - c;
 let multiplication = b * c;
 let division = b / c;
-console.log(alert(sum, difference, multiplication, division));
+alert(sum, difference, multiplication, division);
 
 5.
 
@@ -34,7 +37,7 @@ console.log(alert(result));
 let e = 9;
 let f = 2;
 let results = e % f;
-console.log(alert(results));
+alert(results);
 
 7.
 
@@ -50,20 +53,67 @@ alert(num);
 8.
 
 let age = Number(prompt(`Сколько вам лет?`))
-console.log(alert(age));
+alert(age);
 
 9.
 
 const user = {
-    name: `Денис`,
-    age: `19`,
+    name: "Денис",
+    age: "19",
+    isAdmin: true,
+}
+
+9.1
+
+const user = {
+    name: "Денис",
+    age: "19",
+    isAdmin: true,
+}
+
+user.cityOfResidence = `Krasnoyarsk`;
+
+9.2
+
+const user = {
+    name: "Денис",
+    age: "20",
+    isAdmin: true,
+    
+}
+
+user.cityOfResidence = `Krasnoyarsk`;
+
+9.3
+
+const user = {
+    name: "Денис",
+    age: "20",
+    isAdmin: true,
+    
+}
+
+9.2
+
+const user = {
+    name: "Денис",
+    age: "19",
+    isAdmin: true,
+    
+}
+
+9.4
+
+const user = {
+    name: "Денис",
+    age: "19",
     isAdmin: true,
     
 }
 let info = prompt("Какую информацию хотите узнать о пользователе?", "age");
-console.log(alert(user[info]));
+alert(user[info]);
 
 10.
 
 let userName = prompt("Введите ваше имя:")
-console.log(alert(`Привет, ${userName}`));
+alert(`Привет, ${userName}`);
