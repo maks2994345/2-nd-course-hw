@@ -1,20 +1,22 @@
 1.
 
 let a = 10;
-console.log(alert(a));
 
-let a = 20;
-console.log(alert(a));
+alert(a);
+
+a = 20;
+
+alert(a);
 
 2.
 
 let create = 2007;
-console.log(alert(`Год выпуска первого Iphone ${create}`));
+alert(`Год выпуска первого Iphone ${create}`);
 
 3.
 
 let creator = `Brendan`;
-console.log(alert(`Имя создателя языка JavaScript: ${creator}`));
+alert(`Имя создателя языка JavaScript: ${creator}`);
 
 4.
 
@@ -30,7 +32,7 @@ alert(sum, difference, multiplication, division);
 
 let d = 2;
 let result = d ** 5
-console.log(alert(result));
+alert(result);
 
 6.
 
@@ -46,8 +48,8 @@ num += 5;
 num -= 3;
 num *= 7;
 num /= 3;
-num ++;
-num --;
+num++;
+num--;
 alert(num);
 
 8.
@@ -65,42 +67,15 @@ const user = {
 
 9.1
 
-const user = {
-    name: "Денис",
-    age: "19",
-    isAdmin: true,
-}
-
-user.cityOfResidence = `Krasnoyarsk`;
+user['city of residence'] = 'Krasnoyarsk'
 
 9.2
 
-const user = {
-    name: "Денис",
-    age: "20",
-    isAdmin: true,
-    
-}
-
-user.cityOfResidence = `Krasnoyarsk`;
+user.age = 20;
 
 9.3
 
-const user = {
-    name: "Денис",
-    age: "20",
-    isAdmin: true,
-    
-}
-
-9.2
-
-const user = {
-    name: "Денис",
-    age: "19",
-    isAdmin: true,
-    
-}
+delete user['city of residence']; 
 
 9.4
 
@@ -108,7 +83,7 @@ const user = {
     name: "Денис",
     age: "19",
     isAdmin: true,
-    
+
 }
 let info = prompt("Какую информацию хотите узнать о пользователе?", "age");
 alert(user[info]);
