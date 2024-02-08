@@ -3,7 +3,7 @@
 let a = 10;
 console.log(alert(a));
 
-let a = 20;
+a = 20;
 console.log(alert(a));
 
 2.
