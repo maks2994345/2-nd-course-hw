@@ -10,8 +10,7 @@
 }
 
 .center{
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-inline: max(50% - 600px, 16px);
 }
 
 .top{
