@@ -99,12 +99,39 @@
 
 .relative {
     position: relative;
-  } 
+} 
 
-  .absolute {
+.absolute {
     position: absolute;
     bottom: 32px;
     left: 32px;
     width: 84px;
     height: 32px;
-  }
+}
+
+.seasons__game{
+    height: 800px;
+}
+
+.seasons__card{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 242px;
+}
+
+.game__title{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+
+.game__information{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 32px;
+    width: 584px;
+}
