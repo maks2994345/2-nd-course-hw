@@ -1,22 +1,24 @@
-1.
+
+//1.
 
 let a = 10;
-console.log(alert(a));
+alert(a);
 
 a = 20;
-console.log(alert(a));
 
-2.
+alert(a);
+
+//2.
 
 let create = 2007;
-console.log(alert(`Год выпуска первого Iphone ${create}`));
+alert(`Год выпуска первого Iphone ${create}`);
 
-3.
+//3.
 
 let creator = `Brendan`;
-console.log(alert(`Имя создателя языка JavaScript: ${creator}`));
+alert(`Имя создателя языка JavaScript: ${creator}`);
 
-4.
+//4.
 
 let b = 10;
 let c = 2;
@@ -26,36 +28,36 @@ let multiplication = b * c;
 let division = b / c;
 alert(sum, difference, multiplication, division);
 
-5.
+//5.
 
 let d = 2;
 let result = d ** 5
-console.log(alert(result));
+alert(result);
 
-6.
+//6.
 
 let e = 9;
 let f = 2;
 let results = e % f;
 alert(results);
 
-7.
+//7.
 
 let num = 1;
 num += 5;
 num -= 3;
 num *= 7;
 num /= 3;
-num ++;
-num --;
+num++;
+num--;
 alert(num);
 
-8.
+//8.
 
 let age = Number(prompt(`Сколько вам лет?`))
 alert(age);
 
-9.
+//9.
 
 const user = {
     name: "Денис",
@@ -63,57 +65,24 @@ const user = {
     isAdmin: true,
 }
 
-9.1
+//9.1
 
-const user = {
-    name: "Денис",
-    age: "19",
-    isAdmin: true,
-}
+user['city of residence'] = 'Krasnoyarsk'
 
-user.cityOfResidence = `Krasnoyarsk`;
+//9.2
 
-9.2
+user.age = 20;
 
-const user = {
-    name: "Денис",
-    age: "20",
-    isAdmin: true,
-    
-}
+//9.3
 
-user.cityOfResidence = `Krasnoyarsk`;
+delete user['city of residence']; 
 
-9.3
+//9.4
 
-const user = {
-    name: "Денис",
-    age: "20",
-    isAdmin: true,
-    
-}
-
-9.2
-
-const user = {
-    name: "Денис",
-    age: "19",
-    isAdmin: true,
-    
-}
-
-9.4
-
-const user = {
-    name: "Денис",
-    age: "19",
-    isAdmin: true,
-    
-}
 let info = prompt("Какую информацию хотите узнать о пользователе?", "age");
 alert(user[info]);
 
-10.
+//10.
 
 let userName = prompt("Введите ваше имя:")
 alert(`Привет, ${userName}`);
