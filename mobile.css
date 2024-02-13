@@ -1,0 +1,45 @@
+@media (max-width: 768px){
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top{
+        background-image: url(./img/headerbackground.jpg);
+        background-size: 150%;
+        height: 735px;
+    }
+
+    .header__menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 238px;
+    }
+
+    .header__title{
+        font-size: 32px;
+        text-align: center;
+        width: 370px;
+    }
+    
+    .header__information{
+        font-size: 14px;
+        text-align: center;
+        width: 343px;
+    }
+
+    .header__information-bold{
+        font-size: 14px;
+    }
+
+    .product__image{
+        width: 343px;
+    }
+
+    .button:hover{
+        transform: none;
+        background: #9C0332;
+    }
+}
+

@@ -89,6 +89,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition: all 0.4s;
+}
+
+.button:hover{
+    transform: scale(1.15);
+    background: #6e0223;
 }
 
 .relative {
