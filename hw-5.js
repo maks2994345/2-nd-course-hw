@@ -1,13 +1,20 @@
 //1
 
 function minNum(a, b) {
-    return  min(a, b);
+
+    if (a < b) {
+        return a;
+
+    } else if (b < a) {
+        return b; 
+
+    } else {
+        return a;
+    }
 }
 
-let result = (8, 4);
-let result2 = (6, 6);
-
-console.log(result, result2);
+console.log((8, 4));
+console.log((6, 6));
 
 //2
 
@@ -44,7 +51,7 @@ console.log(square(7));
 //4
 
 function question() {
-    let age = prompt('Сколько вам лет?');
+    let age = Number(prompt('Сколько вам лет?'));
 
     if (age < 0 || isNaN(age)) {
         console.log('Вы ввели неправильное значение');
@@ -122,7 +129,7 @@ console.log(circle2.getPerimeter());
 //8
 
 function gameClick() {
-    let monthNum = prompt('Введите номер месяца');
+    let monthNum = Number(prompt('Введите номер месяца'));
     
     if (isNaN(monthNum) || monthNum <= 0 || monthNum > 12) {
         console.log('Вы ввели некорректные данные');
