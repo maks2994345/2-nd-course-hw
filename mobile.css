@@ -41,5 +41,40 @@
         transform: none;
         background: #9C0332;
     }
+
+    .seasons__game{
+        height: 653px;
+    }
+
+    .seasons__card{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 0;
+    }
+
+    .seasons__icon{
+        width: 345px;
+        padding-top: 64px;
+    }
+
+    .seasons__product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game__title{
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .game__information{
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        width: 343px;
+    }
 }
 
