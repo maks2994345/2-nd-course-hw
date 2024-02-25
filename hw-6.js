@@ -21,18 +21,28 @@ const jn = [1, 3, 5, 10, 20];
 console.log(jn.join(' '));
 
 //4
+const rows = 3;
+const cols = 3;
+const value = 1;
+const multiArray = [];
 
-const array = [
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1]
-];
+for (let i = 0; i < rows; i++) {
+    const row = [];
+    for (let j = 0; j < cols; j++) {
+        row.push(value);
+    }
+    multiArray.push(row);
+}
+
+console.log(multiArray);
 
 //5
 
 const arr = [1, 1, 1];
 
-console.log(arr.push([2, 2, 2]));
+arr.push(2, 2, 2);
+
+console.log(arr);
 
 //6
 
@@ -73,18 +83,16 @@ console.log(newLetters);
 
 //9
 
-const arrs = [
-    [1, 2, 3],
-    [4, 5, 6]
-]
+const array = [[1, 2, 3],[4, 5, 6]];
+const flattenedArray = [].concat.apply([], array);
 
-console.log(arrs.join(','));
+console.log(flattenedArray);
 
 //10
 
 const arr3 = [4, 6, 3, 5, 1, 2, 8, 7, 9, 10];
 
-for (let i = 0; i < array.length - 1; i++) {
+for (let i = 0; i < arr3.length - 1; i++) {
     let sum = arr3[i] + arr3[i + 1];
     
     console.log(sum);
