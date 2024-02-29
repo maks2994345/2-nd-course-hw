@@ -110,3 +110,23 @@ let fullTime = "Время: " + dateNow.getHours() + ":" + dateNow.getMinutes() 
 console.log(fullTime);
 
 //11
+
+function gameClick2(){
+    let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    list = list.sort(() => Math.random() - 0.5);
+    alert(list.join(", "));
+
+    let firstQuestion = prompt('Чему равнялся первый элемент массива?');
+    let secondQuestion = prompt('Чему равнялся последний элемент массива?')
+
+    if (firstQuestion === list[0] && secondQuestion === list[list.length - 1]) {
+        alert('Поздравляем, вы угадали')
+
+    } else if (firstQuestion === list[0] || secondQuestion === list[list.length - 1]) {
+        alert('Вы были близки к победе!')
+
+    } else {
+        alert('Вы ответили неверно')
+    }
+}
+
