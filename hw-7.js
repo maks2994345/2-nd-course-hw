@@ -28,9 +28,11 @@ console.log(Math.round(num));
 
 //4
 
-console.log(Math.max(52, 53, 49, 77, 21, 32));
+let arr = [52, 53, 49, 77, 21, 32];
 
-console.log(Math.min(52, 53, 49, 77, 21, 32));
+
+console.log(Math.max(...arr));
+console.log(Math.min(...arr));
 
 //5
 
@@ -43,7 +45,7 @@ console.log(randomInt(1, 10));
 //6
 
 function getRandomNumbers(numbers){
-    const length = numbers / 2;
+    const length = Math.floor(numbers / 2);
     const nullArray = [];
     for (let i = 0; i < length; i++) {
         nullArray.push(Math.floor(Math.random() * numbers))
@@ -59,11 +61,11 @@ console.log(resultArr);
 //7
 
 function wholeNumbers(number1, number2){
-    return Math.round(Math.random() * (number1 - number2 + 1) + number2);
+    return Math.round(Math.random() * (number2 - number1)) + number1;
 }
 
-let number1 = 1000;
-let number2 = 5;
+let number1 = 5;
+let number2 = 10;
 let result = wholeNumbers(number1, number2);
 console.log(result);
 
@@ -75,15 +77,15 @@ console.log(nowDate);
 //9
 
 let currentDate = new Date();
-currentDate.setDate(73);
+currentDate.setDate(currentDate.getDate() + 73);
 console.log(currentDate);
 
 //10
 
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",
+"Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
 
-const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
 
 let dateNow = new Date();
 let day = dateNow.getDate();
@@ -117,16 +119,21 @@ function gameClick2(){
     alert(list.join(", "));
 
     let firstQuestion = prompt('Чему равнялся первый элемент массива?');
-    let secondQuestion = prompt('Чему равнялся последний элемент массива?')
+    firstQuestion = firstQuestion.toLowerCase();
 
-    if (firstQuestion === list[0] && secondQuestion === list[list.length - 1]) {
+    let secondQuestion = prompt('Чему равнялся последний элемент массива?')
+    secondQuestion = secondQuestion.toLowerCase();
+
+    if (firstQuestion && secondQuestion) {
+        
+    if (firstQuestion === list[0].toLowerCase() && secondQuestion === list[list.length - 1].toLowerCase()) {
         alert('Поздравляем, вы угадали')
 
-    } else if (firstQuestion === list[0] || secondQuestion === list[list.length - 1]) {
+    } else if (firstQuestion === list[0].toLowerCase() || secondQuestion === list[list.length - 1].toLowerCase()) {
         alert('Вы были близки к победе!')
 
     } else {
         alert('Вы ответили неверно')
     }
-}
-
+    
+}}
