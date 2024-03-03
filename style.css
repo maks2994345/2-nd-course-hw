@@ -134,3 +134,12 @@
     padding-bottom: 32px;
     width: 584px;
 }
+
+.seasons__card__2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 242px;
+}
+
