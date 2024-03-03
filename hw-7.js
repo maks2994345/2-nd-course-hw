@@ -119,12 +119,12 @@ function gameClick2(){
     alert(list.join(", "));
 
     let firstQuestion = prompt('Чему равнялся первый элемент массива?');
-    firstQuestion = firstQuestion.toLowerCase();
 
     let secondQuestion = prompt('Чему равнялся последний элемент массива?')
-    secondQuestion = secondQuestion.toLowerCase();
 
     if (firstQuestion && secondQuestion) {
+        secondQuestion = secondQuestion.toLowerCase();
+        firstQuestion = firstQuestion.toLowerCase();
         
     if (firstQuestion === list[0].toLowerCase() && secondQuestion === list[list.length - 1].toLowerCase()) {
         alert('Поздравляем, вы угадали')
